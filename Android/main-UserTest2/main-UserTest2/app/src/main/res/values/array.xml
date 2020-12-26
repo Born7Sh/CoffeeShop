@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="minute">
+        <item>120분</item>
+        <item>90분</item>
+        <item>60분</item>
+        <item>30분</item>
+    </string-array>
+
+    <string-array name="location">
+        <item>3km</item>
+        <item>5km</item>
+        <item>10km</item>
+    </string-array>
+</resources>

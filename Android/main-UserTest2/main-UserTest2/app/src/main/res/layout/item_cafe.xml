@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CafeItem"
+    android:layout_width="match_parent"
+    android:layout_height="143dp"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/CafePicture"
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/mainuser2"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/CafeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="카페이름"></TextView>
+
+            <TextView
+                android:id="@+id/CafeTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="카페시간"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/mainstar"></ImageView>
+
+                <TextView
+                    android:id="@+id/CafeGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:text="4.7"
+                    android:textSize="18dp"></TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/SeeMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:clickable="true"
+                android:text="지도로 보기"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#c8c8c8" />
+
+</LinearLayout>

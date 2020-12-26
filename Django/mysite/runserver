@@ -1,0 +1,2 @@
+stunnel stunnel/dev_https &
+HTTPS=1 python /home/ubuntu/mysite/manage.py runserver 0.0.0.0:8001

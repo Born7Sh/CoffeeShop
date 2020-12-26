@@ -1,0 +1,140 @@
+<html lang="ko"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>register.html</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    
+</head>
+
+<body style="padding-top:90px;">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <span class="navbar-brand mx-5 mb-0 font-weight-bold font-italic">14Gram</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item mx-1 btn btn-primary">
+                <a class="nav-link text-white" href="/">Home</a></li>
+
+            <li class="nav-item dropdown mx-1 btn btn-primary">
+                <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">Util</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/admin/">Admin</a>
+                    
+                </div>
+            </li>
+        </ul>
+
+        <form class="form-inline my-2" action="" method="post"> <input type="hidden" name="csrfmiddlewaretoken" value="M4nS9FSyAeITggmVq719xV622rWM5c3oZHoPbjyikcBDyequCimWnUkWGulYXQED">
+            <input class="form-control mr-sm-2" type="search" placeholder="global search" name="search_word">
+        </form>
+
+        <ul class="navbar-nav ml-5 mr-5">
+            <li class="nav-item dropdown mx-1 btn btn-primary">
+                
+                <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">
+            	    <i class="fas fa-user" aria-hidden="true"></i> a@a.com </a>
+                <div class="dropdown-menu">
+            	    <a class="dropdown-item" href="/accounts/logout/">Logout</a>
+            	    <a class="dropdown-item" href="/accounts/password_change/">Change Password</a>
+                </div>
+                
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<div class="container">
+    
+
+    <h1>New User Registration</h1>
+    <p class="font-italic">Please enter your username and password twice.</p>
+
+    
+
+    <form action="." method="post" class="card pt-3"><input type="hidden" name="csrfmiddlewaretoken" value="M4nS9FSyAeITggmVq719xV622rWM5c3oZHoPbjyikcBDyequCimWnUkWGulYXQED">{% csrf_token %}
+
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_email">Email:</label>
+            <div class="col-sm-5">
+                <input type="email" name="email" class="form-control form-control" placeholder="Email address" required="" autofocus="" id="id_email">
+            </div>
+        </div>
+	<div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_password1">Password:</label>
+            <div class="col-sm-5">
+                <input type="password" name="password1" class="form-control form-control" placeholder="Password" required="" id="id_password1">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_password2">Password confirmation:</label>
+            <div class="col-sm-5">
+                <input type="password" name="password2" class="form-control form-control" placeholder="Password confirmation" required="" id="id_password2">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_name">Name:</label>
+            <div class="col-sm-5">
+                <input type="text" name="name" class="form-control form-control" placeholder="Name" required="" id="id_name">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_phone">Phone:</label>
+            <div class="col-sm-5">
+                <input type="text" name="phone" class="form-control form-control" placeholder="Phone" required="" id="id_phone">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_address">Address:</label>
+            <div class="col-sm-5">
+                <input type="text" name="address" class="form-control form-control" placeholder="Address" required="False" id="id_address">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_birth_day">Birth_Day:</label>
+            <div class="col-sm-5">
+                <input type="date" name="birth_day" class="form-control form-control" placeholder="Birth_Day" required="False" id="id_birth_day">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_gender">Gender:</label>
+            <div class="col-sm-5">
+		<input type="text" name="gender" class="form-control form-control" placeholder="Gender" required="False" id="id_gender">
+        </div>
+        
+
+        <div class="form-group">
+            <div class="offset-sm-3 col-sm-5">
+                <input type="submit" value="Register" class="btn btn-info">
+            </div>
+        </div>
+
+    </form>
+
+
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/c998a172fe.js"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+
+
+
+
+
+
+</body>

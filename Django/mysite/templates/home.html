@@ -1,0 +1,49 @@
+﻿{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}home.html{% endblock %}
+
+{% block extra-style %}
+<style type="text/css">
+
+.title {
+    color: #c80;
+    font-weight: bold;
+}
+.powered {
+    position: relative;
+    top: 77%;
+    color: #cc0;
+    font-style: italic;
+}
+</style>
+{% endblock %}
+
+
+{% block content %}
+       
+    <img src="/static/img/b.jpg" weight = "350" height = "350">
+    <img src="/static/img/c.jpg" weight = "350" height = "350">    
+    <div class="home-image">
+        <h2 class="title">Hello! Welcome to the 14gram project!!!</h2>
+        <h4 class="powered"><i class="fas fa-arrow-circle-right"></i>powered by Django </h4>
+    </div>
+
+    <hr style="margin: 10px 0;">
+
+    <div class="row text-center">
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-6">
+            
+        </div>
+    </div>
+{% endblock content %}
+
+{% block footer %}
+<footer class="fixed-bottom bg-info">
+    <div class="text-white font-italic text-right mr-5">Copyright &copy; 2020 Django</div>
+</footer>
+{% endblock %}
+

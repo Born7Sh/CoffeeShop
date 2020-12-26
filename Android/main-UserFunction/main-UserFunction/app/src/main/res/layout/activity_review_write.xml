@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_ReviewWrite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/BackArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@mipmap/arrowleft"
+                    tools:ignore="RtlHardcoded"></ImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="9.9"
+                    android:gravity="center"
+                    android:text="리뷰 작성 "
+                    android:textSize="25dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ReviewCafeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="14gram Cafe"
+                    android:textColor="#DAA520"
+                    android:textSize="35dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <RatingBar
+                        android:id="@+id/Rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:stepSize="1"></RatingBar>
+
+                    <TextView
+                        android:id="@+id/RatingNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textSize="30dp"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:textColor="#000000"
+                    android:text=" 0 / 100 글자 수"
+                    android:id="@+id/currentNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    ></TextView>
+                <EditText
+                    android:maxLength="100"
+                    android:id="@+id/Review"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_round_white_black"
+                    android:gravity="top"
+                    android:hint="최대 100자까지 작성 가능하며 관련없는 리뷰는 별도의 공지없이 삭제될 수 있습니다,"
+                    android:padding="20dp"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="사 진"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <Button
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/pickAdd"
+                    android:text="첨부하기"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Button>
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/ReviewImage"
+                    android:src="@mipmap/squareadd"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:maxWidth="100dp"
+                    android:maxHeight="100dp"/>
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cancel"
+                    android:id="@+id/ImageRefresh"
+                    android:visibility="gone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"></ImageView>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/ReviewCancel"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_grey_black"
+            android:text="취소"
+            android:textColor="#FFFAFA"
+            android:textSize="30sp"
+            android:textStyle="bold"></Button>
+
+        <Button
+            android:id="@+id/ReviewAdd"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_round_red_black"
+            android:text="등록"
+            android:textColor="#FFFAFA"
+            android:textSize="30dp"
+            android:textStyle="bold"></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

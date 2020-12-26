@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_CafeReservation">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/BackArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:src="@mipmap/arrowleft"
+                tools:ignore="RtlHardcoded"></ImageView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="9.9"
+                android:gravity="center"
+                android:text="예약하기 "
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약자명"
+                android:textColor="#DAA520"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ReverseId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="대학교 5학년"
+            android:textSize="25dp"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약자 연락처"
+                android:textColor="#DAA520"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ReversePhone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="000"
+                android:textSize="25dp"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="-"
+                android:textSize="25dp"></TextView>
+
+            <EditText
+                android:id="@+id/ReversePhone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="000"
+                android:textSize="25dp"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="-"
+                android:textSize="25dp"></TextView>
+
+            <EditText
+                android:id="@+id/ReversePhone3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="000"
+                android:textSize="25dp"></EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="좌석 종류"
+                android:textColor="#DAA520"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="일반석"
+                android:textColor="#000000"
+                android:textSize="25dp"></TextView>
+
+            <EditText
+                android:id="@+id/ReverseNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:inputType="number"
+                android:text="0"
+                android:textSize="25dp"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="인"
+                android:textColor="#000000"
+                android:textSize="25dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft = "25dp"
+                android:text = "10"
+                android:textSize="25dp"
+                android:id = "@+id/RemainNum"
+                ></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="좌석의 구분은 카페의 정보를 참고해주세요."
+            android:textColor="#A9A9A9"
+            android:textSize="15dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약 시간"
+                android:textColor="#DAA520"
+                android:textSize="18dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="예약시간을 설정해주세요."
+                android:textColor="#000000"
+                android:textSize="25dp"></TextView>
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="설정하기"
+                android:id="@+id/click1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Button>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="게스트는 30분후 까지만 예약이 가능합니다."
+            android:textColor="#A9A9A9"
+            android:textSize="15dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+
+                android:id="@+id/ReserveTime"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="25dp"></TextView>
+
+            <Spinner
+                android:entries="@array/minute"
+                android:id="@+id/TimeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:inputType="number"
+                android:textColor="#ff0000"
+                android:text="예상종료시간"
+                android:textSize="25dp"></TextView>
+
+            <TextView
+                android:id="@+id/ExpectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text=""
+                android:textSize="25dp"></TextView>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="5"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/CafeRefresh"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:text="취소"
+            android:textColor="#FFFAFA"
+            android:background="@drawable/button_round_grey_black"
+            android:textSize="30sp"
+            android:textStyle="bold"></Button>
+
+        <Button
+            android:id="@+id/CafeReservationReserve"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="3"
+            android:background="@drawable/button_round_red_black"
+            android:text="예약하기"
+            android:textColor="#FFFAFA"
+            android:textSize="30dp"
+            android:textStyle="bold"></Button>
+    </LinearLayout>
+
+</RelativeLayout>

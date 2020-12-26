@@ -1,0 +1,101 @@
+﻿{% extends "base.html" %}
+{% load widget_tweaks %}
+
+{% block title %}register.html{% endblock %}
+
+{% block content %}
+
+    <h1>사용자 회원가입 페이지</h1>
+    <p class="font-italic">Please enter your username and password twice.</p>
+
+    {% if form.errors %}
+    <div class="alert alert-danger">
+        <div class="font-weight-bold">Wrong! Please correct the error(s) below.</div>
+        {{ form.errors }}
+    </div>
+    {% endif %}
+
+    <form action="." method="post" class="card pt-3">{% csrf_token %}
+
+        <div class="form-group row">
+            {{ form.email|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
+            <div class="col-sm-5">
+                {{ form.email|add_class:"form-control"|attr:"autofocus" }}
+            </div>
+        </div>
+	<div class="form-group row">
+            {{ form.password1|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
+            <div class="col-sm-5">
+                {{ form.password1|add_class:"form-control" }}
+            </div>
+        </div>
+        <div class="form-group row">
+            {{ form.password2|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
+            <div class="col-sm-5">
+                {{ form.password2|add_class:"form-control" }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_name">이름:</label>
+            <div class="col-sm-5">
+                {{ form.name|add_class:"form-control"}}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_nickname">닉네임:</label>
+            <div class="col-sm-5">
+                {{ form.nickname|add_class:"form-control"}}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_phone">전화번호:</label>
+            <div class="col-sm-5">
+                {{ form.phone|add_class:"form-control"}}
+	<br> <span style="color:red">전화번호는 "-" 하이픈 없이 ex) 01012345678 처럼 해주세요.</span>
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_address">주소:</label>
+            <div class="col-sm-5">
+                {{ form.address|add_class:"form-control"}}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_birth_day">생년월일:</label>
+            <div class="col-sm-5">
+                <input type="date" name="birth_day" class="form-control form-control" placeholder="Birth_Day" required="False" id="id_birth_day">
+		<br> <span style="color:red">맨위에 파란부분 연도를 클릭하세요.</span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-sm-3 ml-3 font-weight-bold" for="id_gender">성별:</label>
+            <div class="col-sm-5">
+                <select name = "gender">
+                    <option value="남자"> 남자 </option>
+                    <option value="여자"> 여자 </option>
+                </select>
+            </div>
+        </div>
+	<div class="form-group row">
+	    <table>
+		<tr><td>
+            본인은 만 <b>14세 이상</b>이며, <a href="14gram">14gram 이용약관</a>, <a href="private">개인정보 수집 및 이용</a>, <a href="location"> 위치정보 이용약관</a> 내용을 확인 하였으며, <b>동의합니다.</b>    
+		</td></tr>
+	    </table>
+	</div>
+        
+        <div class="form-group">
+            <div class="offset-sm-3 col-sm-5">
+                <input type="submit" value="동의하고 가입하기" class="btn btn-info"/>
+            </div>
+        </div>
+
+    </form>
+
+<footer class="fixed-bottom bg-info">
+    <div class="text-white font-italic text-right mr-5">14Gram</div>
+</footer>
+
+{% endblock %}
+

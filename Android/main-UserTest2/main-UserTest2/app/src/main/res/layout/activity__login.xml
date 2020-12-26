@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="5dp"
+            android:src="@mipmap/logo" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_centerInParent="true"
+            android:background="#6f4e37" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="로그인"
+            android:textColor="#8c8c8c"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/LoginId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="아이디"></EditText>
+
+        <EditText
+            android:id="@+id/LoginPw"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="패스워드"></EditText>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_round_brown"
+            android:text="Login"
+            android:textColor="#FFFFFF"></Button>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_round_white_brown"
+            android:text="회원가입"
+            android:textColor="#6f4e37"></Button>
+        
+        <TextView
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Find"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="아이디, 비밀번호 찾기"
+            ></TextView>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_centerInParent="true"
+            android:background="#6f4e37" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8c8c8c"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+</LinearLayout>

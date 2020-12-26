@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="150dp"
+    android:background="@drawable/white_layout_black"
+    android:orientation="vertical"
+
+    tools:context=".Activity_MapInfo">
+
+    <TextView
+        android:id="@+id/CafeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="hello"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/CafeStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="hello"
+        android:textSize="17dp"></TextView>
+
+    <TextView
+        android:id="@+id/CafeEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="hello"
+        android:textSize="17dp"></TextView>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="[자세히 보기]"
+        android:textSize="10dp"></Button>
+</LinearLayout>

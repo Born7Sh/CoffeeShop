@@ -1,0 +1,70 @@
+﻿{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}home.html{% endblock %}
+
+{% block extra-style %}
+<style type="text/css">
+
+.title {
+    color: #c80;
+    font-weight: bold;
+}
+.powered {
+    position: relative;
+    top: 77%;
+    color: #cc0;
+    font-style: italic;
+}
+</style>
+{% endblock %}
+
+
+{% block content %}
+       
+    <a href="/static/apk/manager.zip" download="user app download">
+        <img src="/static/img/coffee.png" alt="text" width="150" height="150">
+    </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/static/apk/manager.zip" download="manager app download">
+        <img src="/static/img/cup.png" alt="text" width="150" height="150">
+    </a>
+    <img src="/static/img/k.jpg" alt="text" width="200" height="150">
+
+    <br></br>
+    <table border = "1">
+        <th>Client</th>
+        <th>Download link</th>
+        <tr>
+            <td>User file</td>
+            <td>아직 개발 중이에요 :)</td>
+        </tr>
+        <tr>
+            <td>Manager File</td>
+            <td>아직 개발 중이에요 :)</td>
+        </tr>
+    </table>
+    <br></br>
+    <div class="home-image">
+        <h2 class="title">You can download those files.</h2>
+        <h4 class="powered"><i class="fas fa-arrow-circle-right"></i>powered by Django </h4>
+    </div>
+
+    <hr style="margin: 10px 0;">
+
+    <div class="row text-center">
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-6">
+            
+        </div>
+    </div>
+{% endblock content %}
+
+{% block footer %}
+<footer class="fixed-bottom bg-info">
+    <div class="text-white font-italic text-right mr-5">Copyright &copy; 2020 Django</div>
+</footer>
+{% endblock %}
+

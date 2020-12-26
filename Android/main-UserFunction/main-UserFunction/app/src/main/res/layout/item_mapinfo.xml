@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:gravity="center"
+    android:id="@+id/CafeName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="hello"
+    ></TextView>
+
+    <TextView
+        android:textSize="17dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/CafeStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        ></TextView>
+
+    <TextView
+        android:textSize="17dp"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/CafeEnd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="hello"
+    ></TextView>
+
+    <TextView
+        android:textSize="10dp"
+        android:id="@+id/Token1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[자세히 보기]"
+        ></TextView>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:background="#000000"/>
+</LinearLayout>
+

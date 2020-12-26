@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+	<h1>sign up!</h1>
+	<form method="POST" action="{%url 'register'%}">
+		{%csrf_token %}
+		Username:
+		<br>
+		<input name="username" type="text">
+		<br>
+		Password:
+		<br>
+		<input name="password1" type="password">
+		<br>
+		Confirm Password:
+		<br>
+		<input name="password2" type="password">
+		<br>
+        Name:
+		<br>
+		<input name="first_name" type="text">
+		<br>
+        Email:
+		<br>
+		<input name="email" type="email">
+		<br>
+        Phone_Number:
+		<br>
+		<input name="phone" type="tel">
+		<br>
+        Address:
+		<br>
+		<input name="address" type="text">
+		<br>
+        Birth_Day:
+		<br>
+		<input name="birth_day" type="date">
+		<br>
+        Gender:
+		<br>
+		<input name="gender" value="male" type="radio" id="male">
+		<label for="male">Male</label><br>
+		<input name="gender" value="female" type="radio" id="female">
+		<label for="male">Female</label><br>
+        <br>
+		<input type="submit" class="btn btn-primary" value="sign up">
+	</form>
+</div>
+{% endblock %}
