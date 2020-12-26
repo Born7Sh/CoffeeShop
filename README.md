@@ -10,7 +10,11 @@ In the study of the purpose of visiting coffee shops, "To utilize space and spen
 In this paper, we aim to apply an application that connects empty seats (supply), which is a concern for small business owners who operate an increasing number of coffee shops based on the shared economy, with students (demand) who need to secure space for studies, reading, and socializing.
 
 ### Paper
+<div>
 <img src="https://user-images.githubusercontent.com/20091175/102682068-e17aea80-4209-11eb-9d05-e0e3d3eb22f1.jpg"  width="400" height="600">
 <img src="https://user-images.githubusercontent.com/20091175/102682069-e2ac1780-4209-11eb-981c-b67d4a58175a.jpg"  width="400" height="600">
+</div>
+<div>
 <img src="https://user-images.githubusercontent.com/20091175/102682071-e3dd4480-4209-11eb-8fd5-e8655dd97b01.jpg"  width="400" height="600">
 <img src="https://user-images.githubusercontent.com/20091175/102682072-e63f9e80-4209-11eb-81d6-b8fa30c32180.jpg"  width="400" height="600">
+</div>
